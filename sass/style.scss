@@ -1,0 +1,38 @@
+/**
+Theme Name: Pop Art
+Author: Gabriela Fernandez Chaves Arriola
+**/
+
+/**
+Table of Contents
+1- Abstracts
+  1.1 - Media
+  1.2 - Variables
+2- Components
+ 2.1 - Components
+ 2.2 - Forms
+ 2.3 - Widgets
+3- Core
+  3.1 - Accessibility
+  3.2 - Reset
+  3.3 - Typography
+4- Layout
+  4.1 - Footer
+  4.2 - Main
+  4.3 - Header
+  4.4 - Navigation
+5- Pages
+  5.1 - Front Page
+  5.2 - Posts
+**/
+
+/* 1- Abstracts ======================= */
+@import "abstracts/all";
+/* 2- Components ====================== */
+@import "components/all";
+/* 3- Core ============================ */
+@import "core/all";
+/* 4- Layout ========================== */
+@import "layout/all";
+/* 5- Pages =========================== */
+@import "pages/all";

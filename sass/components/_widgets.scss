@@ -1,0 +1,131 @@
+/********* COLOUR SWITCH ************************/
+.mood-widget {
+  position: relative;
+  top: 160px;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.widget1 {
+  width: 35px;
+  height: 75px;
+}
+
+.widget2 {
+  position: absolute;
+  top: 35px;
+  width: 25px;
+  height: auto;
+
+  cursor: pointer;
+}
+
+body:not(.home) .mood-widget {
+  display: none;
+}
+
+.colour {
+  width: 30px;
+  height: auto;
+}
+
+.gray {
+  width: 30px;
+  height: auto;
+}
+
+/********* COLOUR-WHEEL ANIMATION *****************/
+
+/**** Switch Button ****/
+.site-header.widget2 {
+  transition: all 0.8s linear;
+}
+.site-header.grayscale .widget2 {
+  top: 75px;
+}
+
+/**** Header ****/
+.site-header {
+  transition: all 1s ease-in-out;
+}
+.site-header.grayscale .menu-wrapper {
+  background-color: black;
+  color: white;
+}
+
+.site-header.grayscale {
+  background-color: white;
+}
+
+.site-header.grayscale .header-img img {
+  filter: grayscale(100%);
+}
+
+/***** Menu ***************/
+.site-header.grayscale .menu-wrapper .menu-div1 .menu-div2 {
+  background-color: gray;
+}
+
+/***** Main ****************/
+.site-main.grayscale .section {
+  filter: grayscale(100%);
+}
+
+.site-main.grayscale {
+  background-color: white;
+}
+
+/***** Footer *************/
+.site-footer.grayscale {
+  background-color: black;
+  color: white;
+}
+
+/*Tablet*/
+@media (min-width: 700px) {
+  .mood-widget {
+    width: 60px;
+    top: 140px;
+    margin-left: 10px;
+  }
+  .widget1 {
+    width: 45px;
+    height: 95px;
+  }
+
+  .widget2 {
+    position: absolute;
+    top: 55px;
+    width: 35px;
+  }
+
+  .colour {
+    width: 50px;
+  }
+
+  .gray {
+    width: 50px;
+  }
+  .site-header.grayscale .widget2 {
+    top: 106px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .site-header.grayscale .social-links .social:hover,
+  .site-header.grayscale
+    .menu-wrapper
+    .menu-div1
+    .menu-div2
+    .menu-div3
+    ul
+    li:hover {
+    text-shadow: 0 5px 8px rgba(190, 189, 189, 0.8);
+  }
+
+  .site-header.grayscale .menu-wrapper .menu-div1 .menu-div2 {
+    background-color: transparent;
+  }
+}

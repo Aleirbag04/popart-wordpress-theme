@@ -1,0 +1,108 @@
+/*Mobile*/
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.dots {
+  max-height: 55vh;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+.profilepic {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  right: 20px;
+  box-shadow: 0 4px 8px rgba(180, 58, 13, 0.4);
+}
+
+.dialog {
+  position: absolute;
+  width: 210px;
+  top: 60px;
+  right: 160px;
+}
+
+.home .portfolio .entry-thumbnail img {
+  max-width: 70vw;
+  max-height: 70vw;
+  align-items: center;
+}
+
+.design,
+.code,
+.wp {
+  width: 80px;
+  height: auto;
+}
+
+/*Tablet*/
+@media (min-width: 700px) {
+  .profilepic {
+    width: 220px;
+  }
+  .dialog {
+    width: 280px;
+    right: 210px;
+  }
+  .home .portfolio .entry-thumbnail img {
+    width: 30vw;
+    max-height: 30vw;
+  }
+}
+
+/*Desktop*/
+
+@media (min-width: 1000px) {
+  .dots {
+    bottom: -15vh;
+    height: 150vh;
+  }
+  .profilepic {
+    width: 240px;
+    right: 50px;
+  }
+  .dialog {
+    width: 320px;
+    right: 260px;
+  }
+  .home .portfolio .entry-thumbnail img {
+    width: 22vw;
+    max-height: 22vw;
+  }
+
+  .design,
+  .code,
+  .wp {
+    width: 90px;
+    height: auto;
+  }
+}
+
+/*Desktop High resolution*/
+
+@media (min-width: 1368px) {
+  .profilepic {
+    width: 260px;
+    right: 60px;
+  }
+  .dialog {
+    width: 350px;
+    right: 300px;
+  }
+  .home .portfolio .entry-thumbnail img {
+    width: 22vw;
+    max-height: 22vw;
+  }
+
+  .design,
+  .code,
+  .wp {
+    width: 90px;
+    height: auto;
+  }
+}

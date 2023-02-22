@@ -1,0 +1,40 @@
+//----- Single Post - Blog -------//
+
+.single {
+  background-color: $background-body;
+}
+
+.single .category-blog {
+  margin: 10px 30px 10px 30px;
+}
+
+.single .category-blog .project-date,
+.single .category-blog .project-client {
+  display: none;
+}
+
+//----- Single Post - Portfolio -------//
+
+.portfolio-template-default.single-portfolio .portfolio {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px 10px 30px;
+}
+
+.single-portfolio .portfolio .entry-content .entry-title {
+  text-align: center;
+}
+
+.single-portfolio .portfolio .entry-content .entry-thumbnail {
+  text-align: center;
+}
+
+.project-date,
+.project-client {
+  margin-left: 20vw;
+  margin-top: 25px;
+}
+
+.single-portfolio .portfolio .entry-content .entry-footer {
+  text-align: center;
+}

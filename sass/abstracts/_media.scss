@@ -1,0 +1,132 @@
+/*Mobile*/
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.dots {
+  max-height: 55vh;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+.profilepic,
+.contact,
+.about,
+.folder {
+  position: absolute;
+  width: auto;
+  height: 30vh;
+  right: 5%;
+  box-shadow: 0 4px 8px rgba(180, 58, 13, 0.4);
+}
+
+.dialog {
+  position: absolute;
+  width: 210px;
+  top: 20%;
+  right: 35%;
+}
+
+.site-portfolio .portfolio .entry-thumbnail img,
+.site-main .portfolio .entry-thumbnail img {
+  max-width: 70vw;
+  max-height: 70vw;
+  align-items: center;
+}
+
+.single-portfolio .portfolio .entry-content .entry-thumbnail img {
+  text-align: center;
+  width: 70vw;
+  max-height: auto;
+}
+
+.design,
+.code,
+.wp {
+  width: 80px;
+  height: auto;
+}
+
+/*Tablet*/
+@media (min-width: 700px) {
+  .profilepic {
+    height: 40vh;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(180, 58, 13, 0.4);
+  }
+  .dialog {
+    width: 300px;
+    right: 250px;
+  }
+  .site-portfolio .portfolio .entry-thumbnail img,
+  .site-main .portfolio .entry-thumbnail img {
+    width: 30vw;
+    max-height: 30vw;
+  }
+  .single-portfolio .portfolio .entry-content .entry-thumbnail img {
+    text-align: center;
+    width: 70vw;
+    max-height: auto;
+  }
+}
+
+/*Desktop*/
+
+@media (min-width: 1000px) {
+  .dots {
+    bottom: -15vh;
+    height: 150vh;
+  }
+  .profilepic {
+    right: 50px;
+  }
+  .dialog {
+    width: 320px;
+    right: 260px;
+  }
+  .site-portfolio .portfolio .entry-thumbnail img,
+  .site-main .portfolio .entry-thumbnail img {
+    width: 22vw;
+    max-height: 22vw;
+  }
+
+  .design,
+  .code,
+  .wp {
+    width: 90px;
+    height: auto;
+  }
+
+  .single-portfolio .portfolio .entry-content .entry-thumbnail img {
+    text-align: center;
+    width: 70vw;
+    max-height: auto;
+  }
+}
+
+/*Desktop High resolution*/
+
+@media (min-width: 1368px) {
+  .profilepic {
+    right: 300px;
+  }
+  .dialog {
+    width: 350px;
+    right: 520px;
+  }
+  .site-portfolio .portfolio .entry-thumbnail img,
+  .site-main .portfolio .entry-thumbnail img {
+    width: 22vw;
+    max-height: 22vw;
+  }
+
+  .design,
+  .code,
+  .wp {
+    width: 90px;
+    height: auto;
+  }
+}

@@ -1,0 +1,115 @@
+/********* COLOUR SWITCH ************************/
+.mood-widget {
+  position: relative;
+  top: 160px;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.widget1 {
+  width: 35px;
+  height: 75px;
+}
+
+.widget2 {
+  position: absolute;
+  top: 35px;
+  width: 25px;
+  height: auto;
+
+  cursor: pointer;
+}
+
+.colour {
+  //   position: absolute;
+  width: 30px;
+  height: auto;
+}
+
+.gray {
+  //   position: absolute;
+  width: 30px;
+  height: auto;
+}
+
+/********* COLOUR-WHEEL ANIMATION *****************/
+
+/**** Switch Button ****/
+.site-header.widget2 {
+  transition: all 0.8s linear;
+}
+.site-header.grayscale .widget2 {
+  top: 75px;
+}
+
+/**** Header ****/
+.site-header {
+  transition: all 1s ease-in-out;
+}
+.site-header.grayscale .menu-wrapper {
+  background-color: black;
+  color: white;
+}
+
+.site-header.grayscale {
+  background-color: white;
+}
+
+.site-header.grayscale .header-img .dots,
+.site-header.grayscale .header-img .widget1,
+.site-header.grayscale .header-img .widget2,
+.site-header.grayscale .header-img .profilepic {
+  filter: grayscale(100%);
+}
+
+/***** Menu ***************/
+.site-header.grayscale .menu-wrapper .menu-div1 .menu-div2 {
+  background-color: gray;
+}
+
+/***** Main ****************/
+.site-main.grayscale .section {
+  filter: grayscale(100%);
+}
+
+.site-main.grayscale {
+  background-color: white;
+}
+
+/***** Footer *************/
+.site-footer.grayscale {
+  background-color: black;
+  color: white;
+}
+
+/*Tablet*/
+@media (min-width: 700px) {
+  .mood-widget {
+    width: 60px;
+    top: 140px;
+    margin-left: 10px;
+  }
+  .widget1 {
+    width: 45px;
+    height: 95px;
+  }
+
+  .widget2 {
+    position: absolute;
+    top: 55px;
+    width: 35px;
+  }
+
+  .colour {
+    width: 50px;
+  }
+
+  .gray {
+    width: 50px;
+  }
+  .site-header.grayscale .widget2 {
+    top: 106px;
+  }
+}

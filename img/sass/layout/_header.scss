@@ -1,0 +1,90 @@
+.site-header {
+  background-color: $background-header;
+  height: 60vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 82%);
+  position: relative;
+}
+
+.header-img {
+  position: relative;
+  height: 50vh;
+  margin-top: 1vh;
+}
+
+.site-title {
+  display: none;
+}
+
+/********* PROFILE PIC *************************/
+
+.profilepic {
+  top: -600px;
+
+  transform-origin: 5px 5px;
+  animation: drop-img 0.8s ease forwards, swing-img 1.5s 1s ease-in-out forwards;
+}
+
+/********* PROFILE PIC ANIMATIONS **************/
+@keyframes drop-img {
+  0% {
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateY(640px);
+  }
+  100% {
+    transform: translateY(620px);
+    opacity: 1;
+  }
+}
+
+@keyframes swing-img {
+  0% {
+    transform: translateY(620px) rotateY(0deg);
+  }
+  25% {
+    transform: translateY(620px) rotateZ(30deg);
+  }
+
+  50% {
+    transform: translateY(620px) rotateZ(8deg);
+  }
+  75% {
+    transform: translateY(620px) rotateZ(20deg);
+  }
+  100% {
+    transform: translateY(620px) rotateZ(12deg);
+  }
+}
+
+/********* DIALOG **************************/
+.dialog {
+  animation: dialog 1s 2.2s ease backwards;
+}
+/********* DIALOG ANIMATION ***************/
+
+@keyframes dialog {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/********* MENU ANIMATION ***************/
+@media (min-width: 1000px) {
+  .social-links .social:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    text-shadow: 0 4px 6px rgba(180, 58, 13, 0.6);
+  }
+  .site-header {
+    background-color: $background-header;
+    height: 70vh;
+  }
+
+  header-img {
+    height: 60vh;
+  }
+}
